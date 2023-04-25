@@ -1,0 +1,53 @@
+.header{
+    background-color: #fff;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.header__container{
+    width: 72.22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+
+    .main__handling{
+        display: flex;
+        align-items: center;
+
+        .logo{
+            margin-right: 20px;
+            img{
+                width: 48px;
+            }
+        }
+        
+        .search__button, .favorites__button{
+            padding: 26px 20px;
+            transition: all ease .4s;
+        }
+        .search__button:hover, .favorites__button:hover{
+            color: #1390e5;
+            cursor: pointer;
+            transition: all ease .4s;
+        }
+    }
+
+    .logout{
+        padding: 26px 20px;
+        color: #1390e5;
+        cursor: pointer;
+        transition: all ease-out .3;
+    }
+    .logout:hover{
+        color: darken(#1390e5, 5%);
+        transition: all ease .3;
+    }
+    .link{
+        text-decoration: none;
+        color: rgba(39, 39, 39, .3);
+    }
+}

@@ -1,0 +1,88 @@
+.favorites__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.favorites__container{
+    width: 72.22%;
+    text-align: left;
+    height: 100vh;
+}
+
+.fav_title{
+    margin-bottom: 40px;
+    h1{
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+}
+
+.fav_list ul li{
+    list-style-type: none;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all ease-out .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.fav_list ul li:hover{
+    background-color: darken(#fff, 5%);
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.fav_list ul li:not(:last-child){
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.fav_list ul li:first-child{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.fav_list ul li:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.fav_list .control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+
+    .edit{
+        color: #1076b9;
+        margin-right: 20px;
+        transition: all ease .2s;
+    }
+    .edit:hover{
+        color: lighten(#1076b9, 25%);
+        transition: all ease .2s;
+    }
+    .delete{
+        color: #b90000;
+        transition: all ease .2s;
+    }
+    .delete:hover{
+        color: lighten(#b90000, 25%);
+        transition: all ease .2s;
+    }
+}
+
+.testtt{
+    padding: 13px 20px 14px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    .value{
+        color: black;
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "login": "asd",
+      "password": "asd",
+      "id": 1
+    },
+    {
+      "login": "fasd",
+      "password": "sadasd",
+      "id": 2
+    },
+    {
+      "login": "123",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "login": "333",
+      "password": "333",
+      "id": 4
+    }
+  ]
+}

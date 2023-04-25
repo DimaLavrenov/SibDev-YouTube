@@ -1,0 +1,116 @@
+.cover{
+    width: 510px;
+    height: 520px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(39, 39, 39, .1);
+
+    img{
+        margin-bottom: 32px;
+    }
+
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .login__input{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        label{
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(23, 23, 25, 0.3);
+        }
+        input{
+            width: 334px;
+            height: 48px;
+            font-size: 20px;
+            border: 1px solid rgba(39, 39, 39, 0.1);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #272727;
+            margin-bottom: 4px;
+            transition: all ease-out .2s;
+        }
+        input.red{
+            border: 1px solid red;
+        }
+        input:focus{
+            border: 1px solid #1390e5;
+            background-color: rgba(197, 228, 249, .3);
+            outline: none;
+            transition: all ease-out .2s;
+        }
+        input:hover{
+            border: 1px solid #1390e5;
+            transition: all ease-out .5s;
+        }
+        .error{
+            color: red;
+            font-size: 13px;
+            transition: all .4s ease;
+            transform: translateY(-6px);
+            opacity: 0;
+        }
+        .error.active{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    button{
+        background-color: #1390e5;
+        border-radius: 10px;
+        width: 176px;
+        height: 52px;
+        font-size: 20px;
+        color: #fff;
+        border: none;
+        margin-top: 20px;
+        transition: all ease-out .4s;
+        cursor: pointer;
+    }
+    button:disabled{
+        cursor: no-drop;
+    }
+    button:hover{
+        background-color: darken(#1390e5, 5%);
+        transition: all ease .4s;
+    }
+}
+
+.error__modal{
+    padding: 10px 10px;
+    font-size: 14px;
+    top: -25px;
+    opacity: 0;
+    transition: all .3s ease-out;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: absolute;
+}
+
+.error__modal.active{
+    top: 15px;
+    opacity: 1;
+}
+
+.fa-circle-xmark{
+    margin-right: 3px;
+    color: red;
+}
+
+.lox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
